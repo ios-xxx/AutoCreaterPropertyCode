@@ -1,0 +1,13 @@
+{
+	Array = (
+		f,
+		sss,
+	);
+	string = sssss;
+	bool = YES;
+	number = 1515;
+	dict = {
+		"New item" = ss;
+		"New item - 2" = fffff;
+	};
+}
