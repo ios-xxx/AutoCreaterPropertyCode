@@ -16,6 +16,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
    NSDictionary * dd = @{
@@ -23,7 +24,8 @@
                          @"Arr":@[@"A"],
                          @"Str":@"string",
                          @"Bool":[NSNumber numberWithBool:YES],
-                         @"Dict":@{@"xxx":@"xxx"}
+                         @"Dict":@{@"xxx":@"xxx"},
+                         @"date":[NSDate date]
                          };
     
      [self DictionaryCreaterPropertyCode:dd];
@@ -44,7 +46,7 @@
             
         }else if ([obj isKindOfClass:NSClassFromString(@"__NSCFBoolean")]) {
             
-            propertyStr = [NSString stringWithFormat:@"@property (strong,nonatomic) Bool  %@;",key];
+            propertyStr = [NSString stringWithFormat:@"@property (assign,nonatomic) BOOL   %@;",key];
             
         }else if ([obj isKindOfClass:[NSNumber class]]){
             
@@ -64,11 +66,15 @@
         }else if ([obj isKindOfClass:[NSDictionary class]]){
             
             propertyStr = [NSString stringWithFormat:@"@property (strong,nonatomic) NSDictionary * %@;",key];
+            
+        }else if ([obj isKindOfClass:[NSDate class]]){
+            
+            propertyStr = [NSString stringWithFormat:@"@property (strong,nonatomic) NSDate * %@;",key];
         }
         NSLog(@"%@",[obj class]);
         
         //  拼接Code
-        [propertys appendFormat:@"%@\n\n",propertyStr];
+        [propertys appendFormat:@"/** <#注释#> */\n%@\n\n",propertyStr];
     }];
     NSLog(@"\n\n%@",propertys);
 }
