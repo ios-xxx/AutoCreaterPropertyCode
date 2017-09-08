@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B649A54D1F626815001E8F90 /* CSYAutoProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B649A54C1F626815001E8F90 /* CSYAutoProperty.m */; };
 		B65F33ED1E2F6C7600C4EE90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65F33EC1E2F6C7600C4EE90 /* main.m */; };
 		B65F33F01E2F6C7600C4EE90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B65F33EF1E2F6C7600C4EE90 /* AppDelegate.m */; };
 		B65F33F31E2F6C7600C4EE90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65F33F21E2F6C7600C4EE90 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B649A54B1F626815001E8F90 /* CSYAutoProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSYAutoProperty.h; sourceTree = "<group>"; };
+		B649A54C1F626815001E8F90 /* CSYAutoProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSYAutoProperty.m; sourceTree = "<group>"; };
 		B65F33E81E2F6C7500C4EE90 /* 自动生成属性代码.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自动生成属性代码.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65F33EC1E2F6C7600C4EE90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B65F33EE1E2F6C7600C4EE90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				B65F33EF1E2F6C7600C4EE90 /* AppDelegate.m */,
 				B65F33F11E2F6C7600C4EE90 /* ViewController.h */,
 				B65F33F21E2F6C7600C4EE90 /* ViewController.m */,
+				B649A54B1F626815001E8F90 /* CSYAutoProperty.h */,
+				B649A54C1F626815001E8F90 /* CSYAutoProperty.m */,
 				B65F33F41E2F6C7600C4EE90 /* Main.storyboard */,
 				B65F33F71E2F6C7600C4EE90 /* Assets.xcassets */,
 				B65F33F91E2F6C7600C4EE90 /* LaunchScreen.storyboard */,
@@ -278,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65F33F31E2F6C7600C4EE90 /* ViewController.m in Sources */,
+				B649A54D1F626815001E8F90 /* CSYAutoProperty.m in Sources */,
 				B65F33F01E2F6C7600C4EE90 /* AppDelegate.m in Sources */,
 				B65F33ED1E2F6C7600C4EE90 /* main.m in Sources */,
 			);
@@ -511,6 +517,7 @@
 				B65F34171E2F6C7600C4EE90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B65F34181E2F6C7600C4EE90 /* Build configuration list for PBXNativeTarget "自动生成属性代码Tests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +526,7 @@
 				B65F341A1E2F6C7600C4EE90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B65F341B1E2F6C7600C4EE90 /* Build configuration list for PBXNativeTarget "自动生成属性代码UITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +535,7 @@
 				B65F341D1E2F6C7600C4EE90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
